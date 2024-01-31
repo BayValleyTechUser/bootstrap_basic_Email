@@ -1,3 +1,4 @@
+/* Resetting default styles for body and html */
 body, html {
   margin: 0;
   padding: 0;
@@ -5,24 +6,28 @@ body, html {
   background-color: rgba(8, 37, 92, 0.698);
 }
 
+/* General styles for body */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
+/* Container styles */
 .container {
   height: 90vh;
   display: flex;
   font-family: Arial, sans-serif;
 }
 
+/* Header styles */
 header {
   background-color: #1d5da2;
   color: #f0f7ff;
   padding: 10px;
 }
 
+/* Footer styles */
 footer {
   position: fixed;
   bottom: 0;
@@ -36,6 +41,7 @@ footer {
   padding: 10px;
 }
 
+/* Vertical text styles */
 .vertical {
   height: 55vh;
   padding: auto;
@@ -46,6 +52,7 @@ footer {
   align-items: center;
 }
 
+/* Main content styles */
 main {
   display: flex;
   flex: 1;
@@ -53,8 +60,8 @@ main {
   border: 4px solid #244c9b86;
 }
 
-.sidebarL,
-.sidebarR {
+/* Sidebar styles */
+.sidebarL, .sidebarR {
   line-height: 40px;
   min-width: 100px;
   max-width: 25%;
@@ -72,6 +79,7 @@ main {
   max-width: 20%;
 }
 
+/* Email container styles */
 .emailContainer {
   height: 60vh;
   flex: 2;
@@ -85,10 +93,12 @@ main {
   overflow: auto;
 }
 
+/* Checkbox styles */
 #checkbox {
   cursor: pointer;
 }
 
+/* Email list styles */
 .emailList {
   width: 600px;
   line-height: 40px;
@@ -98,87 +108,25 @@ main {
   cursor: pointer;
 }
 
+/* Gmail styles */
 .gmail {
-  width: 120%;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  font-size: 40px;
   box-sizing: border-box;
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-.checkbox-button input:checked + .checkmark {
-  display: block;
-}
-
-.main-content {
-  display: flex;
-  text-align: left;
-  color: #f3e8e8;
-}
-
-.compose-btn,
-.reply-btn,
-.search-bar,
-.folders-list,
-.To-Do,
-.checklist,
-.overdue {
-  flex: 1;
-  list-style-type: none;
-  margin-bottom: 35px;
-  padding: 10px;
-  background-color: #244c9b86;
-  color: #f3e8e8;
-  border: 3px solid #244c9b86;
+/* Button styles */
+button {
+  background-color: #278798ad; 
+  color: #f3e8e8; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
   cursor: pointer;
-  border-radius: 5px;
-}
-
-.search-bar::placeholder {
-  color: #f3e8e8;
-}
-
-.To-Do,
-.checklist,
-.overdue {
-  margin-bottom: 100px;
-  margin-top: 50px;
-  padding: 10px;
-}
-
-.tasks {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.compose-btn,
-.reply-btn {
-  background-color: #1d5da2;
-}
-
-.emailContainer,
-.sidebarR,
-.sidebarL {
-  box-shadow: 0 0 10px #1d5da2;
-  transition: box-shadow 0.3s ease;
-}
-
-.video {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 140%;
-  height: auto;
-  object-fit: cover;
-  z-index: 10;
-  opacity: 0.1;
-}
+  transition: background-color
