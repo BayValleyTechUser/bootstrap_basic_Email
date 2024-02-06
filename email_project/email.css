@@ -154,12 +154,6 @@ label input[type="checkbox"]::before {
   background-color: #ead9e4; 
 }
 
-label input[type="checkbox"]:checked::before {
-  visibility: visible; 
-  background-color: #ead9e4; 
-  border: 2px solid rgb(128, 36, 36); 
-}
-
 button:hover {
   background-color: #346391; 
 }
@@ -228,3 +222,15 @@ button:hover {
   z-index: 10;
   opacity: 0.1;
 }
+
+.sub-folder {
+  display: none;
+  list-style-type: none;
+  margin-left: 20px;
+
+}
+
+.folder {
+  cursor: pointer;
+}
+
