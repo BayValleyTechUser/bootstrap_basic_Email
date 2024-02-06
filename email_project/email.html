@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <link rel="stylesheet" href="email.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device, initial-scale=1.0">
         <title>Basic Email</title>
-        <script src="email.js"></script>
+        <script src="email.js" defer></script>
     </head>
     
     <body>
@@ -15,8 +14,6 @@
                 <source src="water.mp4" type="video/mp4">
             </video>
         </div>
-        </body>
-        <script src="email.js"></script>
             <div class="container">
             <header>
                 <div class="vertical">
@@ -30,15 +27,28 @@
                     <button class="reply-btn">Friends</button>
                     <input type="text" class="search-bar" placeholder="Search...">
                     <ul class="folders-list">
-                        <li>Inbox</li>
-                        <li>Sent</li>
-                        <li>Drafts</li>
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"aria-expanded="false">
+                            <li class="folder">Inbox</li></button>
+                        <a class="dropdown-item" href="#">
+                            <li>Please Invest NOW!</li>
+                            <li>Do IT! Limited DEAL</li></a>
+                        <ul class="sub-folder">
+                        </ul>
+                        <li class="folder">Sent</li>
+                        <ul class="sub-folder">
+                            <li></li>
+                        </ul>
+                        <li class="folder">Drafts</li>
+                        <ul class="sub-folder">
+                            <li></li>
+                        </ul>
                     </ul>
                 </div>
                 <div class="main-content">
                     <div class="emailContainer"> 
                     <ul class="emailList">
                         <div class="gmail">
+                            <div id="changeColorBtn">
                         <label><input type="checkbox" name=""><button><li>James Wood | Invest in my legit bitcoin 100% | 10:31 AM</li></button></label><br>
                     <label><input type="checkbox" name=""><button><li>James Wood | Invest in my legit bitcoin 100% | 10:31 AM</li></button></label><br>
                 <label><input type ="checkbox" name=""> <button><li>James Wood | Invest in my legit bitcoin 100% | 10:31 AM</li></button></label><br>
@@ -54,6 +64,7 @@
     <label><input type="checkbox" name=""><button><li>James Wood | Invest in my legit bitcoin 100% | 10:31 AM</li></button></label><br>
     <label><input type="checkbox" name=""><button><li>James Wood | Invest in my legit bitcoin 100% | 10:31 AM</li></button></label><br>
 <label><input type ="checkbox" name=""> <button><li>James Wood | Invest in my legit bitcoin 100% | 10:31 AM</li></button></label><br>
+                    </div>
             </div>
                     </ul>
                 </div>
@@ -68,5 +79,6 @@
         <footer>
             <p>&copy; 2024 Scurv | Email. All Rights Reserved.</p>
         </footer>
+        <script src="email.js"></script>
     </body>
 </html>
